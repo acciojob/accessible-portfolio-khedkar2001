@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+    </header>
+    
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <img src="profile.jpg" alt="A professional portrait of me" role="img">
+        <p>Welcome to my portfolio! I am a web developer passionate about creating accessible and user-friendly web applications.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1 - Responsive Web Design</li>
+            <li role="listitem">Project 2 - Accessible Web App</li>
+            <li role="listitem">Project 3 - E-commerce Platform</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
